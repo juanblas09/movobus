@@ -7,7 +7,7 @@ body {
     background: #e6e6e6;
     color: #323232;
     font-family: 'Open Sans', sans-serif;
-    font-size: 112.5%;
+    font-size: 80%;
     line-height: 1.6em;
   }
   
@@ -18,15 +18,8 @@ body {
     padding: 20px;
     list-style-type: none;
   }
-  @media (max-width: 860px) {
-    .timeline {
-      width: 100%;
-      padding: 4em 0 1em 0;
-    }
-  }
   .timeline:before {
     position: absolute;
-    left: 50%;
     top: 0;
     content: ' ';
     display: block;
@@ -38,12 +31,12 @@ body {
   }
   .timeline li {
     padding: 1em 0;
-  }
+  }/*
   @media (max-width: 860px) {
     .timeline li {
       padding: 2em 0;
     }
-  }
+  }*/
   .timeline li::after {
     content: "";
     display: block;
@@ -55,15 +48,15 @@ body {
   .direction-r {
     position: relative;
     width: 400px;
-    float: right;
-  }
+    margin-left: 30px;
+  }/*
   @media (max-width: 860px) {
     .direction-r {
       float: none;
       width: 100%;
       text-align: center;
     }
-  }
+  }*/
   .direction-r .flag {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   }
@@ -79,7 +72,7 @@ body {
     border-right-color: #f8f8f8;
     border-width: 8px;
     pointer-events: none;
-  }
+  }/*
   @media (max-width: 860px) {
     .direction-r .flag:after {
       content: "";
@@ -94,29 +87,29 @@ body {
       border-width: 8px;
       pointer-events: none;
     }
-  }
+  }*/
   .direction-r .flag:before {
     left: -40px;
   }
   .direction-r .time-wrapper {
     float: right;
-  }
+  }/*
   @media (max-width: 860px) {
     .direction-r .time-wrapper {
       float: none;
     }
-  }
+  }*/
   
   .flag-wrapper {
     position: relative;
     display: inline-block;
     text-align: center;
-  }
+  }/*
   @media (max-width: 860px) {
     .flag-wrapper {
       text-align: center;
     }
-  }
+  }*/
   .flag-wrapper .flag {
     position: relative;
     display: inline;
@@ -125,13 +118,13 @@ body {
     border-radius: 5px;
     font-weight: 600;
     text-align: left;
-  }
+  }/*
   @media (max-width: 860px) {
     .flag-wrapper .flag {
       background: white;
       z-index: 15;
     }
-  }
+  }*/
   
   .direction-l .flag:before,
   .direction-r .flag:before {
@@ -145,9 +138,9 @@ body {
     margin-top: -10px;
     background: #fff;
     border-radius: 10px;
-    border: 4px solid #58B96B;
+    border: 4px solid blue;
     z-index: 10;
-  }
+  }/*
   @media (max-width: 860px) {
     .direction-l .flag:before,
     .direction-r .flag:before {
@@ -158,15 +151,15 @@ body {
       display: block;
       margin-left: -10px;
     }
-  }
+  }*/
   
   .time-wrapper {
     display: inline;
     line-height: 1em;
     font-size: 0.66666em;
-    color: #58B96B;
+    color: blue;
     vertical-align: middle;
-  }
+  }/*
   @media (max-width: 860px) {
     .time-wrapper {
       display: block;
@@ -174,33 +167,9 @@ body {
       margin: 4px 0 0 0;
       z-index: 14;
     }
-  }
+  }*/
   .time-wrapper .time {
     display: inline-block;
     padding: 4px 6px;
     background: #f8f8f8;
-  }
-  
-  .desc {
-    margin: 1em 0.75em 0 0;
-    font-size: 0.9em;
-    font-style: italic;
-    line-height: 1.5em;
-  }
-  .desc a {
-    color: #58B96B;
-    text-decoration: none;
-  }
-  .desc a:hover {
-    text-decoration: underline;
-  }
-  @media (max-width: 860px) {
-    .desc {
-      position: relative;
-      margin: 1em 1em 0 1em;
-      padding: 1em;
-      background: whitesmoke;
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-      z-index: 15;
-    }
   }
