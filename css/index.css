@@ -1,0 +1,57 @@
+body{
+    background-image: url("../img/bg.png");
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.jumbotron{
+    background: #fcfcfc !important;
+}
+
+/*========================
+   GRÁFICO DE RECORRIDO
+========================*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    display: inline-block;
+    margin: 5px 40% 5px 0;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    box-shadow:1px 1px 1px rgba(0, 0, 0, 0.15);
+    background: #f8f8f8;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 23px;
+    width: 15px;
+    height: 15px;
+    z-index: 400;
+    margin-top: 5px;
+}
+ul.timeline > li > span{
+    font-weight: bold;
+}
+li.clave{
+    background: #22c0e8 !important;
+    color: #f8f8f8
+}

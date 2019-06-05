@@ -13,7 +13,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
 
@@ -29,36 +29,18 @@
 
 <div class="container">
   <div class="jumbotron">
-    <h1 class="display-4">Bienvenido/a a MovoBus</h1>
-    <p class="lead">La app impulsada por FM Comunicarte para consulta de horarios de colectivos en la región</p>
-  </div>
-
-  <div class="jumbotron">
     <div class="alert alert-info" role="alert">
-      <i class="far fa-clock"></i> Para comenzar, seleccione una localidad de origen
+      <i class="far fa-clock"></i> Genial! ahora seleccione una localidad de destino
     </div>
 
     <div class="form-group">
-      <b><label for="selectorPartida">Seleccione localidad de origen</label></b>
+      <b><label for="selectorPartida">Seleccione localidad de desitno</label></b>
       <select class="form-control" id="selectorPartida" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
         <option value="">Seleccione una</option>
-        <option value="cities/lopez">López</option>
-        <option value="cities/santa-fe">Santa Fe</option>
+        <option value="/santa-fe">Santa Fe</option>
       </select>
     </div>
   </div>
-</div>
-
-
-
-<div class="container lista"> 
-  <ul class="timeline">
-    <li class="clave"><span>16:05</span> López </li>
-    <li><span>16:20</span> Gálvez <small>Llega</small></li>
-    <li><span>16:25</span> Gálvez <small>Sale</small></li>
-    <li class="clave"><span>18:35</span> Santa Fe</li>
-
-  </ul>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -67,8 +49,3 @@
 
 </body>
 </html>
-
-
-
-
-
