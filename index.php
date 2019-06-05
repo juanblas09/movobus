@@ -23,15 +23,12 @@
     MovoBus
   </a>
   <form class="form-inline">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><--</button>
+      <a href="http://fmcomunicarte.com"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Volver</button></a>
   </form>
 </nav>
 
 <div class="container">
-  <div class="jumbotron">
-    <h1 class="display-4">Bienvenido/a a MovoBus</h1>
-    <p class="lead">La app impulsada por FM Comunicarte para consulta de horarios de colectivos en la región</p>
-  </div>
+  <?php include("jumbotron.html"); ?>
 
   <div class="jumbotron">
     <div class="alert alert-info" role="alert">
