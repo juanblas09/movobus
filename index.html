@@ -13,14 +13,14 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
 
   <nav class="navbar navbar-dark bg-primary">
     <a class="navbar-brand">
-      <img src="../../img/logo.png" height="30" class="d-inline-block align-top" alt="">
+      <img src="/img/logo.png" height="30" class="d-inline-block align-top" alt="">
       MovoBus
     </a>
     <form class="form-inline">
@@ -31,37 +31,39 @@
 
   <div class="container">
     <div class="jumbotron">
-      <div class="alert alert-success" role="alert">
-          <i class="far fa-check-circle"></i> Genial! ahora seleccione una localidad de destino
+      <h1 class="display-3">Bienvenido/a a MovoBus</h1>
+      <p class="lead">La app impulsada por FM Comunicarte para consulta de horarios de colectivos en la región</p>
+    </div>
+
+    <div class="jumbotron">
+      <div class="alert alert-info" role="alert">
+        <i class="far fa-clock"></i> Para comenzar, seleccione una localidad de origen
       </div>
 
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-            <div class="card-header"><i class="fas fa-long-arrow-alt-right"></i> Origen</div>
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-map-marker"></i> López</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-            <div class="card-header"><i class="fas fa-bus"></i> Destino</div>
-            <div class="card-body">
-              <h5 class="card-title">Seleccione uno</h5>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="form-group">
-        <b><label for="selectorPartida">Seleccione localidad de desitno</label></b>
+        <b><label for="selectorPartida">Seleccione localidad de origen</label></b>
         <select class="form-control" id="selectorPartida"
           onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
           <option value="">Seleccione una</option>
-          <option value="santa-fe">Santa Fe</option>
+          <option value="cities/lopez">López</option>
+          <option value="cities/santa-fe">Santa Fe</option>
         </select>
       </div>
     </div>
+  </div>
+
+
+
+
+
+  <div class="container lista">
+    <ul class="timeline">
+      <li class="clave"><span>16:05</span> López </li>
+      <li><span>16:20</span> Gálvez <small>Llega</small></li>
+      <li><span>16:25</span> Gálvez <small>Sale</small></li>
+      <li class="clave"><span>18:35</span> Santa Fe</li>
+
+    </ul>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
