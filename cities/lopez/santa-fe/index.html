@@ -58,7 +58,7 @@
             <table class="table table-sm">
                 <thead>
                     <tr>
-                        <th scope="col">Empresa</th>
+                        <th scope="col">Emp.</th>
                         <th scope="col">Línea</th>
                         <th scope="col">Sale</th>
                         <th scope="col">Llega</th>
@@ -67,11 +67,11 @@
                 </thead>
                 <tbody>
                     <tr class="table-info">
-                        <th scope="row">CDG</th>
+                        <th scope="row"><abbr title="Ciudad de Gálvez">CDG</abbr></th>
                         <td>Directo <i class="far fa-calendar-plus"></i></td>
                         <td>06:05</td>
                         <td>08:10</td>
-                        <td><button type="button" class="btn btn-info btn-sm"><i class="fas fa-plus"></i></button></td>
+                        <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#cdg1"><i class="fas fa-plus"></i></button></td>
                     </tr>
                 </tbody>
             </table>
@@ -82,6 +82,39 @@
                 <i class="far fa-calendar-times"></i> Exclusivo domingos y feriados
             </p>
 
+        </div>
+    </div>
+
+    <!--Ciudad de Gálvez 6:05-->
+    <div class="modal fade" id="cdg1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Recorrido</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>
+                        López - Santa Fe<br>
+                        <small class="text-muted">
+                            Directo x Autopista <br>
+                            <i class="far fa-calendar-plus"></i> Exclusivo días hábiles
+                        </small>
+                    </h6>
+                        <ul class="timeline">
+                            <li class="clave"><span>16:05</span> López </li>
+                            <li><span>16:20</span> Gálvez <small>Llega</small></li>
+                            <li><span>16:25</span> Gálvez <small>Sale</small></li>
+                            <li class="clave"><span>18:35</span> Santa Fe</li>
+                        </ul>
+                </div>
+                <div class="modal-footer">
+                    Información provista por Cuna de la Bandera S.R.L.
+                </div>
+            </div>
         </div>
     </div>
 
