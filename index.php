@@ -28,7 +28,7 @@
 </nav>
 
 <div class="container">
-  <?php include("jumbotron.html"); ?>
+  <?php include("_includes/jumbotron.php"); ?>
 
   <div class="jumbotron">
     <div class="alert alert-info" role="alert">
