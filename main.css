@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background-image: url("img/bg.png");
+}
+
 .horarios {
     width: 100%;
 }
