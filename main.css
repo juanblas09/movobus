@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.horarios {
+    width: 100%;
+}
+
+.horarios tr th {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.horarios tr td {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.bg-light {
+    background: #BBDEFB;
+}
+
+.bg {
+    background: #2196F3;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-orange {
+    background: #FF9800;
+}
+
+.bg-accent {
+    background: #536DFE;
+}
