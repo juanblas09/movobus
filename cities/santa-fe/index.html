@@ -13,58 +13,55 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="../../css/index.css">
 </head>
 
 <body>
 
   <nav class="navbar navbar-dark bg-primary">
     <a class="navbar-brand">
-      <img src="/img/logo.png" height="30" class="d-inline-block align-top" alt="">
+      <img src="../../img/logo.png" height="30" class="d-inline-block align-top" alt="">
       MovoBus <small class="text-muted" >v 0.0.1</small>
     </a>
     <form class="form-inline">
-      <a class="btn btn-primary my-2 my-sm-0" href="https://fmcomunicarte.com/" role="button">Volver</a>
+      <a class="btn btn-primary my-2 my-sm-0" href="../../index.html" role="button">Volver</a>
     </form>
   </nav>
 
   <div class="container">
-    <div class="jumbotron mt-4 shadow">
-      <h1 class="display-3">Bienvenido/a a MovoBus</h1>
-      <p class="lead">La app impulsada por FM Comunicarte para consulta de horarios de colectivos en la región</p>
-    </div>
-
-    <div class="jumbotron shadow">
-      <div class="alert alert-info" role="alert">
-        <i class="far fa-clock"></i> Para comenzar, seleccione una localidad de origen
+    <div class="jumbotron shadow mt-4">
+      <div class="alert alert-success" role="alert">-->
+          <i class="far fa-check-circle"></i> Genial! ahora seleccione una localidad de destino
       </div>
 
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card text-white bg-success mb-3">
+            <div class="card-header"><i class="fas fa-long-arrow-alt-right"></i> Origen</div>
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-map-marker"></i> Santa Fe</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card text-white bg-warning mb-3">
+            <div class="card-header"><i class="fas fa-bus"></i> Destino</div>
+            <div class="card-body">
+              <h5 class="card-title">Seleccione uno</h5>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="form-group">
-        <b><label for="selectorPartida">Seleccione localidad de origen</label></b>
+        <b><label for="selectorPartida">Seleccione localidad de desitno</label></b>
         <select class="form-control" id="selectorPartida"
           onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
           <option value="">Seleccione una</option>
-          <option value="cities/lopez">López</option>
-          <option value="cities/santa-fe">Santa Fe</option>
+          <option value="lopez">López</option>
         </select>
       </div>
     </div>
   </div>
-
-
-
-
-  <!--
-  <div class="container lista">
-    <ul class="timeline">
-      <li class="clave"><span>16:05</span> López </li>
-      <li><span>16:20</span> Gálvez <small>Llega</small></li>
-      <li><span>16:25</span> Gálvez <small>Sale</small></li>
-      <li class="clave"><span>18:35</span> Santa Fe</li>
-
-    </ul>
-  </div>
-  -->
 
   <footer class="footer text-white bg-dark mt-auto py-3">
     <div class="container">
@@ -83,8 +80,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-
 
 </body>
 
